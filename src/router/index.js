@@ -16,6 +16,6 @@ export default new Router({
       path: '/fantasy',
       name: ' fantasy',
       component: fantasy
-    },
+    }
   ]
 })

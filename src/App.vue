@@ -1,9 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/sexy1.jpg">
+
+    <!-- <img src="./assets/sexy1.jpg"> -->
     <router-view/>
+
   </div>
 </template>
+
+
+
+
 
 <script>
 export default {
@@ -11,7 +17,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

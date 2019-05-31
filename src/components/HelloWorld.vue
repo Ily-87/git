@@ -1,5 +1,7 @@
 <template>
+
   <div class="hello">
+      <img src="../assets/sexy1.jpg">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -29,10 +31,10 @@
       </li>
       <li>
         <a
-          href="\src\public\fantasy.vue"
-          target="_blank"
-        >
-          Ambitions
+          href=""
+          <router-link to="/fantasy">Ambitions</router-link>
+  <router-view></router-view>
+
         </a>
       </li>
       <br>
@@ -90,8 +92,10 @@ export default {
     return {
       msg: 'Welcome to the Hobbit Habitat'
     }
+
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
