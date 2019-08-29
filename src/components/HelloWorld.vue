@@ -1,16 +1,25 @@
+<style>  
+div.elf 
+{height: 15px;
+  width: 20px;
+  
+}</style>
+
 <template>
 
   <div class="hello">
-      <img src="../assets/sexy1.jpg">
+      <div class="elf"><img src="../assets/sexy1.jpg"></div>
+
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
         <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
-          Core Docs
+          href=""
+          <router-link to="/docs">docs</router-link>
+          <router-view></router-view>
+         
+     
         </a>
       </li>
       <li>
@@ -23,10 +32,10 @@
       </li>
       <li>
         <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
+          href=""
+        <router-link to="/game">game</router-link>
+          <router-view></router-view>
+
         </a>
       </li>
       <li>
@@ -90,8 +99,9 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to the Hobbit Habitat'
-    }
+      msg: 'Creativity, Research, Innovation: Business Ideas!'
+
+          }
 
   }
 }
